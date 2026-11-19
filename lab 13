@@ -1,0 +1,24 @@
+books=[("python crash course","by Eric Matthes","(2019)","|Genre: programming"),
+       ("Automate the boring stuff","by Ai Sweigart","(2020)","|Genre: programming"),
+       ("Artificial Intelligence:","A morden approach by Stuart Russell","(2021)","|Genre: Ai"),
+       ("Clean code","by Robert C. Martin","(2008)","|Genre: Software Engineering")]
+
+library_categories={"Programming","programming","Ai","Software Engineering"}
+student_wishlist={"Ai","Cloud Computing","Robotics","Cybersecurity"}
+print("==========================================================================")
+print("              LIBRARY BOOK & CATEGORY MANAGER                             ")
+print("==========================================================================")
+while True:
+    print("Select an option:")
+    print("1. View Cataloged Books")
+    print("2. Add new book record")
+    print("3. View unique library categories")
+    print("4. Add category ro student wish list")
+    print("5. Run category gap analysis")
+    print("6. Exit")
+    choice=int(input("Enter your choice(1-6): "))
+    
+    if choice==1:
+        print("----Current Library Catalog (Fixed Records)---")
+        for index,i in enumerate(books):
+            print(index+1,*i)
